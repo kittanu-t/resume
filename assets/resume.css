@@ -1,0 +1,248 @@
+@font-face {
+  font-family: Barlow;
+  src: url("fonts/Barlow-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url("fonts/Barlow-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url("fonts/Barlow-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url("fonts/Barlow-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --ink: #172a3b;
+  --muted: #405969;
+  --accent: #176866;
+  --rule: #c3d1d9;
+  --sidebar: #f1f6f8;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #e7edf1;
+  font-family: Barlow, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+::selection { color: var(--paper); background: var(--accent); }
+
+a { color: inherit; text-underline-offset: 3px; }
+a:hover { color: var(--accent); }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+
+.toolbar {
+  width: min(210mm, calc(100% - 32px));
+  margin: 24px auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.toolbar nav { display: flex; flex-wrap: wrap; gap: 18px; }
+.toolbar a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 4px 0;
+}
+.toolbar a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: 0 2px var(--accent);
+}
+.toolbar button {
+  padding: 9px 16px;
+  color: var(--paper);
+  background: var(--ink);
+  border: 0;
+  border-radius: 4px;
+  font: 500 14px Barlow, Arial, sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.toolbar button:hover { background: var(--accent); }
+
+.resume {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 40px;
+  padding: 14mm 14mm 13mm;
+  background: var(--paper);
+  box-shadow: 0 12px 36px #172a3b18;
+}
+
+.resume-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 0 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.resume-header::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 54px;
+  height: 3px;
+  background: var(--accent);
+}
+h1 {
+  margin: 0 0 7px;
+  color: var(--ink);
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+.job-title {
+  margin: 0;
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+.contact a { text-decoration-thickness: 1px; }
+.resume-body {
+  display: grid;
+  grid-template-columns: 202px minmax(0, 1fr);
+  padding-top: 27px;
+}
+
+.sidebar {
+  padding: 18px 18px 22px;
+  background: var(--sidebar);
+}
+.sidebar section + section {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+}
+.sidebar h2 { font-size: 15px; margin-bottom: 10px; }
+.sidebar p, .sidebar li { font-size: 12.5px; line-height: 1.45; }
+.sidebar p { margin: 0; }
+.tool-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.tool-list li + li { margin-top: 6px; }
+.exposure {
+  margin-top: 13px !important;
+  color: var(--muted);
+}
+.exposure strong { display: block; font-weight: 600; }
+.course-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.course-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 12px;
+  gap: 8px;
+}
+.course-list li + li { margin-top: 10px; }
+.grade { color: var(--accent); font-weight: 600; text-align: right; }
+.course-note { margin-top: 14px !important; color: var(--muted); }
+
+.main-content { padding: 0 0 0 27px; }
+.main-content > section + section {
+  margin-top: 24px;
+  padding-top: 19px;
+  border-top: 1px solid var(--rule);
+}
+h2 {
+  margin: 0 0 13px;
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+h3 {
+  margin: 0 0 6px;
+  font-size: 14.5px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+p { margin: 0 0 8px; }
+.education-name { font-weight: 600; margin-bottom: 3px; }
+.education-detail { font-size: 13px; color: var(--muted); margin: 0; }
+.gpa { margin: 7px 0 0; font-size: 12px; color: var(--muted); }
+.skill + .skill { margin-top: 20px; }
+.skill h3 { color: var(--accent); }
+.main-content ul { padding-left: 16px; margin: 0; }
+.main-content li { font-size: 13px; line-height: 1.5; padding-left: 2px; }
+.main-content li + li { margin-top: 6px; }
+.main-content li::marker { color: var(--accent); }
+.teaching-role { margin-bottom: 7px; font-size: 13px; font-weight: 600; }
+
+@page { size: A4; margin: 0; }
+
+@media print {
+  html, body { width: 210mm; margin: 0; background: white; }
+  body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .toolbar { display: none; }
+  .resume { margin: 0; box-shadow: none; min-height: 297mm; }
+  .skill, .sidebar section, .teaching { break-inside: avoid; }
+  a { text-decoration: none; }
+}
+
+@media screen and (max-width: 820px) {
+  .resume { width: calc(100% - 32px); min-height: 0; padding: 30px; }
+  h1 { font-size: 30px; }
+  .resume-header { flex-wrap: wrap; gap: 12px; }
+  .resume-body { grid-template-columns: 185px minmax(0, 1fr); }
+  .main-content { padding-left: 22px; }
+}
+
+@media screen and (max-width: 600px) {
+  .toolbar { margin-top: 16px; font-size: 13px; gap: 12px; }
+  .toolbar nav { gap: 14px; }
+  .toolbar button { padding: 8px 12px; font-size: 13px; }
+  .resume { padding: 26px 23px; margin-bottom: 20px; }
+  h1 { font-size: 29px; }
+  .job-title { font-size: 14px; }
+  .resume-body { display: flex; flex-direction: column; gap: 24px; padding-top: 24px; }
+  .main-content { padding: 0; order: 0; }
+  .sidebar { order: 1; padding: 20px; }
+  .sidebar p, .sidebar li, .main-content li { font-size: 14px; }
+  .sidebar h2, h2 { font-size: 18px; }
+  h3 { font-size: 16px; }
+}
