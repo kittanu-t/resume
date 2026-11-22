@@ -3,96 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kittanu Thinchanda | Programmer / Developer</title>
+  <title>Kittanu Thinchanda | INET Khon Kaen</title>
   <link rel="stylesheet" href="assets/resume.css">
-  <style>
-    :root {
-      --ink: #0c174f;
-      --muted: #324370;
-      --accent: #3245a4;
-      --orion: #4563ff;
-      --euphoria: #a1b1ff;
-      --rule: #d8dff5;
-      --sidebar: #f1f4ff;
-    }
-    body { font-family: Arial, Helvetica, sans-serif; }
-    .toolbar button { font-family: inherit; }
-    .resume { border-top: 5px solid var(--orion); }
-    .resume-header::after { background: var(--orion); }
-    h1 { letter-spacing: -0.025em; }
-    h3 { font-weight: 700; }
-    .resume-body { display: block; padding-top: 20px; }
-    .main-content { padding: 0; }
-    .main-content > section + section { margin-top: 17px; padding-top: 14px; }
-    .main-content h2 { color: var(--accent); margin-bottom: 9px; }
-    .summary { background: var(--sidebar); padding: 12px 15px; border-left: 3px solid var(--euphoria); margin: 0; }
-    .stack { color: var(--muted); font-size: 13px; margin-bottom: 5px; }
-    .project + .project { margin-top: 14px; }
-    .project, section { break-inside: avoid; }
-    .main-content li, .stack { font-size: 14px; }
-  </style>
 </head>
 <body>
   <div class="toolbar">
-    <nav aria-label="Resume versions"><a href="programmer.html">Programmer</a><a href="programmer-inet.html" aria-current="page">INET Khon Kaen</a></nav>
-    <button type="button" onclick="window.print()">Print / Save PDF</button>
+    <nav aria-label="Resume versions"><a href="ai-engineer.html">AI Engineer</a><a href="programmer.html">Programmer</a><a href="programmer-inet.html" aria-current="page">INET Khon Kaen</a></nav>
+    <div class="actions">
+      <a href="Kittanu-Thinchanda-INET.pdf">PDF</a>
+      <button type="button" onclick="window.print()">Print</button>
+    </div>
   </div>
   <article class="resume" aria-labelledby="applicant-name">
     <header class="resume-header">
-      <div>
-        <h1 id="applicant-name">Kittanu Thinchanda</h1>
-        <p class="job-title">Entry-Level Programmer / Developer</p>
-      </div>
+      <h1 id="applicant-name">Kittanu Thinchanda</h1>
+      <p class="job-title">Entry-Level Programmer / Developer | Web Applications</p>
       <div class="contact">
         <a href="mailto:thinchanda.k@gmail.com">thinchanda.k@gmail.com</a>
         <a href="tel:+66855690925">085 569 0925</a>
         <a href="https://github.com/kittanu-t">github.com/kittanu-t</a>
       </div>
     </header>
-
-    <main class="resume-body main-content">
-      <section aria-label="Profile">
-        <p class="summary">Artificial Intelligence student at Khon Kaen University with project experience in web applications, Python APIs, and MySQL. Interested in backend development, with experience checking application workflows and troubleshooting Python code.</p>
+    <main>
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <h3>Khon Kaen University · College of Computing</h3>
+        <p>B.Sc. program in Artificial Intelligence · Coursework completed November 2026 · GPA 3.55/4.00</p>
+        <p class="meta"><strong>Selected coursework</strong> · Web Application Development, Database Management System, Data Structures and Algorithms, Software Engineering for Artificial Intelligence</p>
       </section>
-      <section>
-        <h2>Selected Projects</h2>
-        <div class="project">
-          <h3>Sports Facility Booking System <span class="stack">· University team project</span></h3>
-          <p class="stack">Laravel/PHP · Blade · Bootstrap · MySQL · Docker</p>
+      <section aria-labelledby="technical-skills">
+        <h2 id="technical-skills">Technical Skills</h2>
+        <p><strong>Web and APIs</strong> · Python, FastAPI, HTML/CSS, Laravel, PHP</p>
+        <p><strong>Databases and tools</strong> · SQL, MySQL, Git, Docker (course project)</p>
+      </section>
+      <section aria-labelledby="projects">
+        <h2 id="projects">Selected Projects</h2>
+        <div class="entry">
+          <h3>Sports Facility Booking System</h3>
+          <p class="meta">2026 · Team coursework · Laravel, PHP, Blade, Bootstrap, MySQL, Docker</p>
           <ul>
-            <li>Contributed to a web application for reserving courts and reviewing booking requests.</li>
-            <li>The team project covered overlapping reservations, venue closures, and approval workflows for facility staff.</li>
+            <li>Contributed to a Laravel and MySQL application that lets users reserve courts and staff approve or reject booking requests.</li>
+            <li>Fixed sign-in handling for booking pages and restricted staff review access to the facilities they manage.</li>
           </ul>
         </div>
-        <div class="project">
-          <h3>RAG Lab <span class="stack">· Thai–English document Q&amp;A prototype</span></h3>
-          <p class="stack">Python · FastAPI · Qdrant · Git</p>
+        <div class="entry">
+          <h3>RAG Lab — Bilingual PDF Question Answering</h3>
+          <p class="meta">2026 · Python, FastAPI, E5 embeddings, Qdrant</p>
           <ul>
-            <li>Prototyped a FastAPI application for PDF question answering with AI-assisted development.</li>
-            <li>Checked retrieved passages and answer citations while validating retrieval workflows.</li>
+            <li>Prototyped a Thai–English PDF question-answering app with AI-assisted development and exposed retrieved passages and answer citations for inspection.</li>
+            <li>Validated workflows for comparing baseline retrieval with query rewriting and reranking by examining retrieved passages and citations.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>SunHaEat — LINE Restaurant Recommendations</h3>
+          <p class="meta">2025 · Team project · LINE webhook, Gemini API, ChromaDB</p>
+          <ul>
+            <li>Designed a workflow that extracts user intent, retrieves restaurant records, and generates recommendations with Gemini.</li>
+            <li>Connected the LINE webhook and debugged the local prototype using AI-assisted development.</li>
           </ul>
         </div>
       </section>
-      <section>
-        <h2>Technical Skills</h2>
-        <ul>
-          <li><strong>Web and data</strong> · Python, FastAPI, HTML/CSS, Laravel/PHP, SQL, MySQL, pandas</li>
-          <li><strong>Development</strong> · Git, Docker (course project), workflow validation, debugging</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Teaching Experience</h2>
+      <section aria-labelledby="teaching">
+        <h2 id="teaching">Teaching Experience</h2>
         <h3>Teaching Assistant · Khon Kaen University</h3>
         <ul>
-          <li>Helped students troubleshoot Python and pandas lab exercises and graded submissions for Basic Python and Pandas and AI Workshop 3.</li>
-          <li>Worked in four-person TA teams supporting classes of about 80 and 110 students, respectively.</li>
+          <li>Helped students debug lab exercises and graded submissions in AI Workshop 3 and Basic Python and Pandas.</li>
+          <li>Worked in four-person teaching teams for classes of about 110 and 80 students, respectively.</li>
         </ul>
-      </section>
-      <section>
-        <h2>Education</h2>
-        <h3>Khon Kaen University · College of Computing</h3>
-        <p class="stack">Artificial Intelligence program · GPA 3.53 (October 2026 record)</p>
-        <p>Coursework: Web Application Development (A), Database Management System (A), Software Engineering for Artificial Intelligence (A), Data Structures and Algorithms (A).</p>
       </section>
     </main>
   </article>
