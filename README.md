@@ -4,6 +4,7 @@
 
 - [AI Engineer](ai-engineer.html) เน้น NLP, RAG และการทดลอง ML
 - [Programmer](programmer.html) เน้น Python, SQL, เว็บ/API และ debugging
+- [Programmer / Developer — INET Khon Kaen](programmer-inet.html) · [PDF](Kittanu-Thinchanda-INET.pdf)
 
 เปิดไฟล์ HTML ด้วย browser ได้โดยตรง ปุ่มด้านบนใช้สลับฉบับและเปิดหน้าพิมพ์ เลือก Save as PDF, กระดาษ A4, scale 100%, margin None และปิด headers/footers เพื่อส่งออกเรซูเม่หนึ่งหน้า เปิด Background graphics เพื่อคงสีตกแต่งตามแบบ
 
