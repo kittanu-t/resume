@@ -28,7 +28,7 @@
       <section aria-labelledby="education">
         <h2 id="education">Education</h2>
         <h3>Khon Kaen University · College of Computing</h3>
-        <p>B.Sc. in Artificial Intelligence · Second-Class Honors · GPA 3.55/4.00 · Coursework done Nov 2026</p>
+        <p>B.Sc. in Artificial Intelligence · Graduated 2026 · Second-Class Honors · GPA 3.55/4.00</p>
         <p class="meta"><strong>Selected coursework</strong> · Web Application Development, Database Management, Data Structures and Algorithms</p>
         <p class="meta"><strong>Senior research project</strong> · Thai Hate Speech Classification (team capstone, 2026) · Python, PyTorch, Hugging Face, BERT, LLaMA, LoRA</p>
         <ul>
@@ -37,11 +37,21 @@
       </section>
       <section aria-labelledby="technical-skills">
         <h2 id="technical-skills">Technical Skills</h2>
-        <p><strong>Used in projects</strong> · Python, FastAPI, Laravel, PHP, HTML/CSS, SQL, MySQL, Git, Docker (course)</p>
-        <p><strong>Exposure through AI-assisted team project</strong> · Next.js, React, TypeScript, MongoDB</p>
+        <p><strong>Languages and web</strong> · Python, TypeScript, PHP, HTML/CSS · FastAPI, Next.js, Laravel</p>
+        <p><strong>Databases and APIs</strong> · SQL, MySQL, PostgreSQL (Supabase), REST, LINE API, Gemini API</p>
+        <p><strong>Deployment and tools</strong> · Vercel, Cloudflare Workers, Git/GitHub, Docker (course project)</p>
+        <p><strong>Approach</strong> · AI-assisted development: I design, review, test and debug the code</p>
       </section>
       <section aria-labelledby="projects">
         <h2 id="projects">Selected Projects</h2>
+        <div class="entry">
+          <h3>SunHaEat Web — Restaurant Search and Chat Assistant</h3>
+          <p class="meta">2026 · Solo project · Next.js, FastAPI, Supabase PostgreSQL, Vercel <a href="https://web-mu-seven-37.vercel.app" class="project-link">Live demo</a> <a href="https://github.com/kittanu-t/sunhaeat-web" class="project-link">Source code</a></p>
+          <ul>
+            <li>Built and deployed a Thai restaurant search app with a map over 30,348 open-data places, plus a chat assistant that answers from the data and says when it has none.</li>
+            <li>Designed a signed backend layer with bot checks, row-level security, rate limits and a rule-based fallback; evaluated it on 126 Thai test questions.</li>
+          </ul>
+        </div>
         <div class="entry">
           <h3>Sports Facility Booking System</h3>
           <p class="meta">2026 · Team coursework (Web Application Development) · Laravel, PHP, Blade, Bootstrap, MySQL, Docker</p>
@@ -51,25 +61,10 @@
           </ul>
         </div>
         <div class="entry">
-          <h3>RAG Lab — Bilingual PDF Question Answering</h3>
-          <p class="meta">2026 · Python, FastAPI, E5 embeddings, Qdrant</p>
+          <h3>SunHaEat — LINE Restaurant Bot</h3>
+          <p class="meta">2025 · Team coursework (NLP) · rebuilt 2026 on TypeScript, Cloudflare Workers, D1</p>
           <ul>
-            <li>Prototyped a Thai–English PDF question-answering app with AI-assisted development, exposing retrieved passages and citations for inspection.</li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h3>SunHaEat — LINE Restaurant Bot (Rebuild)</h3>
-          <p class="meta">2026 · Solo project · TypeScript, Cloudflare Workers, D1, LINE Messaging API</p>
-          <ul>
-            <li>Rebuilt the NLP course prototype as a deployed LINE bot on Cloudflare Workers and D1 with AI-assisted development, serving 102 restaurant records.</li>
-            <li>Designed webhook handling with signature verification and event deduplication, plus rule-based search that still answers when the AI quota runs out.</li>
-          </ul>
-        </div>
-        <div class="entry">
-          <h3>SunHaEat — LINE Restaurant Recommendations</h3>
-          <p class="meta">2025 · Team coursework (NLP) · LINE webhook, Gemini API, ChromaDB</p>
-          <ul>
-            <li>Designed the intent → retrieval → Gemini workflow and connected the LINE webhook.</li>
+            <li>Designed the intent → retrieval → Gemini workflow and connected the LINE webhook; later rebuilt it as a deployed bot with signature verification and event deduplication.</li>
           </ul>
         </div>
       </section>
