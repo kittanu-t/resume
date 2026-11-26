@@ -29,10 +29,10 @@
         <h2 id="education">Education</h2>
         <h3>Khon Kaen University · College of Computing</h3>
         <p>B.Sc. in Artificial Intelligence · Second-Class Honors · GPA 3.55/4.00 · Coursework done Nov 2026</p>
-        <p class="meta"><strong>Selected coursework</strong> · Web Application Development, Database Management, Data Structures and Algorithms, Software Engineering for AI</p>
+        <p class="meta"><strong>Selected coursework</strong> · Web Application Development, Database Management, Data Structures and Algorithms</p>
         <p class="meta"><strong>Senior research project</strong> · Thai Hate Speech Classification (team capstone, 2026) · Python, PyTorch, Hugging Face, BERT, LLaMA, LoRA</p>
         <ul>
-          <li>Led experiment design and analysis for a team study of single-text and generated sentence-pair inputs on the HateThaiSent dataset, comparing BERT and LLaMA configurations by macro-F1 in an offline evaluation.</li>
+          <li>Led experiment design and analysis comparing single-text and generated sentence-pair inputs on HateThaiSent, using BERT and LLaMA with macro-F1 in an offline evaluation.</li>
         </ul>
       </section>
       <section aria-labelledby="technical-skills">
@@ -44,7 +44,7 @@
         <h2 id="projects">Selected Projects</h2>
         <div class="entry">
           <h3>Sports Facility Booking System</h3>
-          <p class="meta">2026 · Team coursework · Laravel, PHP, Blade, Bootstrap, MySQL, Docker</p>
+          <p class="meta">2026 · Team coursework (Web Application Development) · Laravel, PHP, Blade, Bootstrap, MySQL, Docker</p>
           <ul>
             <li>Contributed to a Laravel and MySQL application with three user roles (booker, staff, admin) for reserving courts, approving or rejecting booking requests, and handling facility closure periods.</li>
             <li>Fixed booking-page sign-in handling and limited staff review access to their own facilities.</li>
@@ -54,15 +54,22 @@
           <h3>RAG Lab — Bilingual PDF Question Answering</h3>
           <p class="meta">2026 · Python, FastAPI, E5 embeddings, Qdrant</p>
           <ul>
-            <li>Prototyped a Thai–English PDF question-answering app with AI-assisted development, exposing retrieved passages and citations to compare baseline retrieval against query rewriting and reranking.</li>
+            <li>Prototyped a Thai–English PDF question-answering app with AI-assisted development, exposing retrieved passages and citations for inspection.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>SunHaEat — LINE Restaurant Bot (Rebuild)</h3>
+          <p class="meta">2026 · Solo project · TypeScript, Cloudflare Workers, D1, LINE Messaging API</p>
+          <ul>
+            <li>Rebuilt the NLP course prototype as a deployed LINE bot on Cloudflare Workers and D1 with AI-assisted development, serving 102 restaurant records.</li>
+            <li>Designed webhook handling with signature verification and event deduplication, plus rule-based search that still answers when the AI quota runs out.</li>
           </ul>
         </div>
         <div class="entry">
           <h3>SunHaEat — LINE Restaurant Recommendations</h3>
-          <p class="meta">2025 · Team project · LINE webhook, Gemini API, ChromaDB</p>
+          <p class="meta">2025 · Team coursework (NLP) · LINE webhook, Gemini API, ChromaDB</p>
           <ul>
-            <li>Designed a workflow that extracts user intent, retrieves restaurant records, and generates recommendations with Gemini.</li>
-            <li>Connected the LINE webhook and debugged the local prototype using AI-assisted development.</li>
+            <li>Designed the intent → retrieval → Gemini workflow and connected the LINE webhook.</li>
           </ul>
         </div>
       </section>
@@ -70,7 +77,7 @@
         <h2 id="teaching">Teaching Experience</h2>
         <h3>Teaching Assistant · Khon Kaen University</h3>
         <ul>
-          <li>Helped students debug lab exercises and graded submissions in AI Workshop 3 and Basic Python and Pandas.</li>
+          <li>Helped students debug lab work and graded submissions in AI Workshop 3 and Python/Pandas.</li>
           <li>Worked in four-person teaching teams for classes of about 110 and 80 students, respectively.</li>
         </ul>
       </section>
